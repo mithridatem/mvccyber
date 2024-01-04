@@ -24,6 +24,9 @@
         case '/mvccyber/roles/add':
             insertRoles($bdd);
             break;
+        case '/mvccyber/roles/all':
+            showAllRoles($bdd);
+            break;
         default:
             error();
             break;

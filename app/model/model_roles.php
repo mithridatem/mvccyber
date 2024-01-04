@@ -25,7 +25,7 @@
         }
     }
     //méthode pour retourner la liste des roles (id_roles, nom_roles)
-    function getAllRoles(PDO $bdd){
+    function getAllRoles(PDO $bdd):array{
         try {
             $requete = $bdd->prepare('SELECT id_roles,nom_roles FROM roles');
             $requete->execute();

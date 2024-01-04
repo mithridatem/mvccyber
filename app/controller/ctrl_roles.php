@@ -28,3 +28,14 @@
         //appel de la vue
         include_once './app/vue/vue_add_roles.php';
     }
+    function showAllRoles($bdd){
+        $message = "";
+        //récupération de la liste des rôles
+        $roles = getAllRoles($bdd);
+        //test si la liste est vide
+        if(!$roles){
+            $message = "Il n'y à pas roles dans la BDD";
+        }
+        //importer la vue
+        include_once './app/vue/vue_get_all_roles.php';
+    }
