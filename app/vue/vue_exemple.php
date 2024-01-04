@@ -5,6 +5,7 @@
     <title>Exemple</title>
 </head>
 <body>
+    <?php include_once './app/vue/vue_navbar.php'?>
     <h1>Exemple de page du super site !!!</h1>
 </body>
 </html>

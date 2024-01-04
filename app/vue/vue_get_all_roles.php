@@ -6,6 +6,7 @@
     <title>Liste des roles</title>
 </head>
 <body>
+    <?php include_once './app/vue/vue_navbar.php'?>
     <h1>Liste des rôles :</h1>
     <!--Afficher la liste des rôles -->
     <?php foreach($roles as $role):?>

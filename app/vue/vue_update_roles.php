@@ -5,6 +5,7 @@
     <title>Modifier le roles</title>
 </head>
 <body>
+    <?php include_once './app/vue/vue_navbar.php'?>
     <h1>Modifier le roles :</h1>
     <form action="" method="post">
         <label for="nom_roles">Saisir le nom du roles :</label>
