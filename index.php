@@ -27,6 +27,9 @@
         case '/mvccyber/roles/all':
             showAllRoles($bdd);
             break;
+        case '/mvccyber/roles/update/id':
+            updateRoles($bdd);
+            break;
         default:
             error();
             break;
