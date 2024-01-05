@@ -21,7 +21,9 @@ function addUtilisateur($bdd){
                     $password = password_hash(cleanInput($_POST["password_utilisateur"]), PASSWORD_DEFAULT);
                     //test si l'image à été importé 
                     if($_FILES["image_utilisateur"]["tmp_name"] !=""){
-                        $image = "./public/media/".$_FILES["image_utilisateur"]["name"];
+                        $image = $_FILES["image_utilisateur"]["name"];
+                        $ext = getFileExtension($image);
+                        $image = "./public/media/".$nom.$prenom.$ext;
                         //déplacement du fichier image
                         move_uploaded_file($_FILES["image_utilisateur"]["tmp_name"], $image);
                     }
